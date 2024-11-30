@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Chat</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <div id="chat-container">
+            <div id="time-container">
+                <div id="time-bar"></div>
+                <div id="time-text"></div>
+            </div>
+            <div id="menu-box">
+                <div id="num-user">
+                    <img id="man-img" src="./static/man.png"></img>
+                    <div id="man-count">0</div>
+                </div>
+                <div id="score-board">
+                    <img id="score-board-img" src="./static/score-board.png"></img>
+                </div>
+            </div>
+            <div id="messages"></div>
+            <div id="input-container">
+                <input id="input" type="text" placeholder="Type a message...">
+                <button id="send-button">Send</button>
+            </div>
+        </div>
+        <div class="modal" id="myModal">
+            <div class="modal-content">
+                <div id="close-btn-container"><button class="close-btn" id="closeModalBtn">X</button></div>
+                <h2>Score Board</h2>
+                <div id="score-content">
+                </div>
+            </div>
+        </div>
+        <div id="enter-container">
+            <h1>Animal Quiz</h1>
+            <div><h3>Please enter your name.</h3></div>
+            <div id="enter-box">
+                <input id="name-input"></input>
+                <button id="name-button">Enter</button>
+            </div>
+            <img src="./static/giraffe.png"></img>
+            <div id="team-name"><h3>Team Giraffe&#40;10&#41;</h3></div>
+        </div>
+        <script src="app.js"></script>
+    </body>
+</html>
